@@ -19,5 +19,6 @@ termale (1,1). Per ogni centro termale invece si possono non avere prenotazioni 
 
 -Città e SPA, questa associazione si verifica perchè la SPA è posizionato in una determinata città. Per ogni città può non esserci alcuna SPA oppure ce ne possono essere molte (0,N). Una SPA invece risiede in una e una sola città (1,1). L'associazione sarà quindi un'associazione uno a molti 1:N, facoltativa da parte della SPA.
 
--Città e Centro Termale, questa associazione si verifica perchè il centro benessere è posizionato in una determinata città. Per ogni città può non esserci alcun centro benessere oppure ce ne possono essere molti (0,N). Un centro benessere invece può risiedere in una e una sola città (1,1). L'associazione sarà quindi un'associazione uno a molti 1:N, facoltativa da parte del centro benessere.
+-Città e Centro Termale, questa associazione si verifica perchè il centro termale è posizionato in una determinata città. Per ogni città può non esserci alcun centro termale oppure ce ne possono essere molti (0,N). Un centro termale invece può risiedere in una e una sola città (1,1). L'associazione sarà quindi un'associazione uno a molti 1:N, facoltativa da parte del centro termale.
 
+-Città Nazione, questa associazione si verifica perchè una città appartiene ad una nazione. Per ogni città si può avere una e una s 
