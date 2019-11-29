@@ -13,6 +13,8 @@ benessere (1,1). Per ogni centro benessere invece si possono non avere prenotazi
 -Prenotazione e Centro Termale, questa associazione si verifica perchè per entrare in un centro termale ed utilizzare le sue risorse c'è prima bisogno di una prenotazione. Per ogni prenotazione si potrà avere uno e  un solo centro
 termale (1,1). Per ogni centro termale invece si possono non avere prenotazioni o averne molte(0,N). L'associazione che ne scaturirà sarà quindi un'associazione uno a molti 1:N, non obbligatoria da parte del centro termale.
 
+-Prenotazione e Cliente, questa associazione si verifica perchè per accedere alle varie risorse il cliente deve effettuare una prenotazione. 
+
 -Città e Centro Benessere, questa associazione si verifica perchè il centro benessere è posizionato in una determinata città. Per ogni città può non esserci alcun centro benessere oppure ce ne possono essere molti (0,N). Un centro benessere invece risiede in una e una sola città (1,1). L'associazione sarà quindi un'associazione uno a molti 1:N, facoltativa da parte del centro benessere.
 
 -Città e Palestra, questa associazione si verifica perchè la palestra è posizionata in una determinata città. Per ogni città può non esserci alcuna palestra oppure ce ne possono essere molte (0,N). Una palestra invece risiede in una e una sola città (1,1). L'associazione sarà quindi un'associazione uno a molti 1:N, facoltativa da parte della palestra.
@@ -28,4 +30,5 @@ termale (1,1). Per ogni centro termale invece si possono non avere prenotazioni 
 -Nazione e Operatore, questa associazione si verifica perchè un operatore appartiene ad una nazione. Ogni operatore appartiene a una e una sola nazione(1,1). Una nazione può non avere operatori o averne molti(0,N). L'associazione sarà quindi uno a molti, facoltativa da parte della nazione.
 
 -Nazione e Dottore, questa associazione si verifica perchè un dottore appartiene ad una nazione. Ogni dottore appartiene a una e una sola nazione(1,1). Una nazione può non avere dottori o averne molti(0,N). L'associazione sarà quindi uno a molti, facoltativa da parte della nazione.
+
 
