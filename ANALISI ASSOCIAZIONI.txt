@@ -21,4 +21,11 @@ termale (1,1). Per ogni centro termale invece si possono non avere prenotazioni 
 
 -Città e Centro Termale, questa associazione si verifica perchè il centro termale è posizionato in una determinata città. Per ogni città può non esserci alcun centro termale oppure ce ne possono essere molti (0,N). Un centro termale invece può risiedere in una e una sola città (1,1). L'associazione sarà quindi un'associazione uno a molti 1:N, facoltativa da parte del centro termale.
 
--Città Nazione, questa associazione si verifica perchè una città appartiene ad una nazione. Per ogni città si può avere una e una s 
+-Città e Nazione, questa associazione si verifica perchè una città appartiene ad una nazione. Per ogni città si ha una e una sola nazione(1,1). Una nazione invece ha un minimo di una città e un massimo di molte(1,N). L'associazione sarà quindi un'associazione uno a molti 1:N obbligatoria.
+
+-Nazione e Cliente, questa associazione si verifica perchè un cliente appartiene ad una nazione. Ogni cliente appartiene a una e una sola nazione(1,1). Una nazione può non avere clienti o averne molti(0,N). L'associazione sarà quindi uno a molti, facoltativa da parte della nazione.
+
+-Nazione e Operatore, questa associazione si verifica perchè un operatore appartiene ad una nazione. Ogni operatore appartiene a una e una sola nazione(1,1). Una nazione può non avere operatori o averne molti(0,N). L'associazione sarà quindi uno a molti, facoltativa da parte della nazione.
+
+-Nazione e Dottore, questa associazione si verifica perchè un dottore appartiene ad una nazione. Ogni dottore appartiene a una e una sola nazione(1,1). Una nazione può non avere dottori o averne molti(0,N). L'associazione sarà quindi uno a molti, facoltativa da parte della nazione.
+
