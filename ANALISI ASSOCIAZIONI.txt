@@ -1,16 +1,23 @@
-La realt� che vogliamo gestire � quella di un'azienda che possiede una rete di centri benessere.
-Abbiamo varie entit� e per ogni entit� si verificano molte associazioni.
+La realtà che vogliamo gestire è quella di un'azienda che possiede una rete di centri benessere.
+Abbiamo varie entità e per ogni entità si verificano molte associazioni.
 
--Prenotazione e Centro Benessere, questa associazione si verifica perch� per entrare in un centro benessere ed utilizzare le sue risorse c'� prima bisogno di una prenotazione. Per ogni prenotazione si potr� avere uno e  un solo centro
-benessere (1,1). Per ogni centro benessere invece si possono non avere prenotazioni o averne molte(0,N). L'associazione che ne scaturir� sar� quindi un'associazione uno a molti 1:N, non obbligatoria da parte del centro benessere.
+-Prenotazione e Centro Benessere, questa associazione si verifica perchè per entrare in un centro benessere ed utilizzare le sue risorse c'è prima bisogno di una prenotazione. Per ogni prenotazione si potrà avere uno e  un solo centro
+benessere (1,1). Per ogni centro benessere invece si possono non avere prenotazioni o averne molte(0,N). L'associazione che ne scaturirà sarà quindi un'associazione uno a molti 1:N, non obbligatoria da parte del centro benessere.
 
--Prenotazione e Palestra, questa associazione si verifica perch� per entrare in una palestra ed utilizzare le sue risorse c'� prima bisogno di una prenotazione. Per ogni prenotazione si potr� avere una e  una sola palestra (1,1).
- Per ogni palestra invece si possono non avere prenotazioni o averne molte(0,N). L'associazione che ne scaturir� sar� quindi un'associazione uno a molti 1:N, non obbligatoria da parte della palestra.
+-Prenotazione e Palestra, questa associazione si verifica perchè per entrare in una palestra ed utilizzare le sue risorse c'è prima bisogno di una prenotazione. Per ogni prenotazione si potrà avere una e  una sola palestra (1,1).
+ Per ogni palestra invece si possono non avere prenotazioni o averne molte(0,N). L'associazione che ne scaturirà sarà quindi un'associazione uno a molti 1:N, non obbligatoria da parte della palestra.
 
--Prenotazione e SPA, questa associazione si verifica perch� per entrare in una SPA ed utilizzare le sue risorse c'� prima bisogno di una prenotazione. Per ogni prenotazione si potr� avere una e una sola SPA (1,1).
- Per ogni SPA invece si possono non avere prenotazioni o averne molte(0,N). L'associazione che ne scaturir� sar� quindi un'associazione uno a molti 1:N, non obbligatoria da parte della SPA
--Prenotazione e Centro Termale, questa associazione si verifica perch� per entrare in un centro termale ed utilizzare le sue risorse c'� prima bisogno di una prenotazione. Per ogni prenotazione si potr� avere uno e  un solo centro
-termale (1,1). Per ogni centro termale invece si possono non avere prenotazioni o averne molte(0,N). L'associazione che ne scaturir� sar� quindi un'associazione uno a molti 1:N, non obbligatoria da parte del centro termale.
+-Prenotazione e SPA, questa associazione si verifica perchè per entrare in una SPA ed utilizzare le sue risorse c'è prima bisogno di una prenotazione. Per ogni prenotazione si potrà avere una e una sola SPA (1,1).
+ Per ogni SPA invece si possono non avere prenotazioni o averne molte(0,N). L'associazione che ne scaturirà sarà quindi un'associazione uno a molti 1:N, non obbligatoria da parte della SPA
+ 
+-Prenotazione e Centro Termale, questa associazione si verifica perchè per entrare in un centro termale ed utilizzare le sue risorse c'è prima bisogno di una prenotazione. Per ogni prenotazione si potrà avere uno e  un solo centro
+termale (1,1). Per ogni centro termale invece si possono non avere prenotazioni o averne molte(0,N). L'associazione che ne scaturirà sarà quindi un'associazione uno a molti 1:N, non obbligatoria da parte del centro termale.
 
--Prenotazione e CLien
+-Città e Centro Benessere, questa associazione si verifica perchè il centro benessere è posizionato in una determinata città. Per ogni città può non esserci alcun centro benessere oppure ce ne possono essere molti (0,N). Un centro benessere invece risiede in una e una sola città (1,1). L'associazione sarà quindi un'associazione uno a molti 1:N, facoltativa da parte del centro benessere.
+
+-Città e Palestra, questa associazione si verifica perchè la palestra è posizionata in una determinata città. Per ogni città può non esserci alcuna palestra oppure ce ne possono essere molte (0,N). Una palestra invece risiede in una e una sola città (1,1). L'associazione sarà quindi un'associazione uno a molti 1:N, facoltativa da parte della palestra.
+
+-Città e SPA, questa associazione si verifica perchè la SPA è posizionato in una determinata città. Per ogni città può non esserci alcuna SPA oppure ce ne possono essere molte (0,N). Una SPA invece risiede in una e una sola città (1,1). L'associazione sarà quindi un'associazione uno a molti 1:N, facoltativa da parte della SPA.
+
+-Città e Centro Termale, questa associazione si verifica perchè il centro benessere è posizionato in una determinata città. Per ogni città può non esserci alcun centro benessere oppure ce ne possono essere molti (0,N). Un centro benessere invece può risiedere in una e una sola città (1,1). L'associazione sarà quindi un'associazione uno a molti 1:N, facoltativa da parte del centro benessere.
 
