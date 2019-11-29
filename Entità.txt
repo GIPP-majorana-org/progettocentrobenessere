@@ -1,0 +1,44 @@
+
+L'entità città presenta i seguenti attributi:
+nome,cap;
+chiave primaria: cap;
+
+L'entita nazione presenta i seguenti attributi:
+nome;
+chiave primaria: nome;
+
+L'entità SPA presenta i seguenti attributi:
+codice, nome, indirizzo, n_telefono, email;
+chiave primaria: codice;
+
+L'entità palestra presenta i seguenti attributi:
+codice, nome, indirizzo, n_telefono, email;
+chiave primaria: codice;
+
+L'entità centro_benessere presenta i seguenti attributi:
+codice, nome, indirizzo,n_telefono, email;
+chiave primaria: codice;
+
+L'entità centro_termale presenta i seguenti attributi:
+codice, nome, indirizzo, n_telefono, email;
+chiave primaria: codice;
+
+L'entità prenotazione presenta i seguenti attributi:
+codice_p, data_prenotazione, data_i, data_f, disdetta, email disdetta;
+chiave primaria: codice_p;
+
+L'entità cliente presenta i seguenti attributi:
+nome, cognome, indirizzo, email, n_telefono, cf, data_nascita;
+chiave primaria: cf;
+
+L'entità trattamento presenta i seguenti attributi:
+cod, descrizione;
+chiave primaria: cod;
+
+L'entità percorso presenta i seguenti attributi:
+codice, descrizione, nome, durata, tipologia, beneficio;
+chiave primaria: codice;
+
+L'entità operatore presenta i seguenti attributi:
+ragione_sociale, indirizzo, n_telefono, email, data_nascita, cf;
+chiave primaria: cf;
