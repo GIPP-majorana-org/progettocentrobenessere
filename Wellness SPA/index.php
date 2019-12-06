@@ -35,12 +35,12 @@ include 'header.php';
 <div class="container">
 	<div class="row">
 		<div class="col"><br>
-	<p class="font-italic float-left">
+	<p class="font-family: Nunito,sans-serif; float-left">
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dictum metus non magna egestas porttitor. Cras sit amet dictum magna, a lacinia augue. Sed rhoncus pulvinar aliquet. In hac habitasse platea dictumst. Suspendisse potenti. Pellentesque malesuada tincidunt risus, semper pulvinar mi dignissim nec. Quisque arcu metus, tincidunt in eleifend a, varius ut velit. Cras pellentesque aliquet turpis in luctus. Phasellus ac interdum urna. Proin neque est, blandit sit amet feugiat hendrerit,
 commodo at nisi. Phasellus sed rhoncus augue. Vivamus quis consectetur ipsum. Maecenas euismod neque felis, at sollicitudin tellus vehicula quis. Mauris sed ligula vel diam mattis feugiat ut a urna.</p>
 </div><br>
-		<div class="col"><br><br><br><br><br><br><br><br><br><br>
-	<p class="font-italic float-right">
+		<div class="col"><br><br><br><br><br><br><br><br><br><br><br><br>
+	<p class="font-family: Nunito,sans-serif; float-right">
 	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dictum metus non magna egestas porttitor. Cras sit amet dictum magna, a lacinia augue. Sed rhoncus pulvinar aliquet. In hac habitasse platea dictumst. Suspendisse potenti. Pellentesque malesuada tincidunt risus, semper pulvinar mi dignissim nec. Quisque arcu metus, tincidunt in eleifend a, varius ut velit. Cras pellentesque aliquet turpis in luctus. Phasellus ac interdum urna. Proin neque est, blandit sit amet feugiat hendrerit, commodo at nisi. Phasellus sed rhoncus augue. Vivamus quis consectetur ipsum. Maecenas euismod neque felis, at sollicitudin tellus vehicula quis. Mauris sed ligula vel diam mattis feugiat ut a urna.</p>
 	</div>
 </div>
