@@ -18,10 +18,9 @@
       <a class="nav-item nav-link mx-1" href="#">Galleria</a>
       <a class="nav-item nav-link mx-1" href="#">Contatti</a>
       <a class="nav-item nav-link mr-5 ml-1" href="#">Chi Siamo</a>
-      <button type="button" class="ml-5 btn btn-dark" href="signup.php">Registrati</button>
+      <button type="submit" class="ml-5 btn btn-dark" onclick="window.location.href = 'signup.php';">Registrati</button>
     </div>
 </nav>
 </div>
 </body>
 </html>
-
