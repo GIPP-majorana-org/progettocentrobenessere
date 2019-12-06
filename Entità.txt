@@ -82,3 +82,7 @@ chiave primaria: codice;
 L'entità portaf_virt presenta i seguenti attributi:
 codice,prezzo,scandenza,descrizione
 chiave primaria: codice;
+
+L'entità occupazione presenta i seguenti attributi:
+cod, descrizione, minp;
+chiave primaria: cod;
