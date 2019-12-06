@@ -17,7 +17,7 @@ termale (1,1). Per ogni centro termale invece si possono non avere prenotazioni 
 
 -Prenotazione e Percorso, questa associazione si verifica perchè in una prenotazione si può scegliere un percorso. Per ogni prenotazione può non esserci un percorso o sceglierne al massimo uno(0,1). Per ogni percorso si possono non avere prenotazioni o averne tante(0,N). L'associazione sarà uno a molti facoltativa.
 
--Prenotazione e Trattamento, questa associazione si verifica perchè in una prenotazione si può scegliere un singolo trattamento. Per ogni prenotazione può non esserci un trattamento o sceglierne al massimo uno(0,1). Per ogni trattamento si possono non avere prenotazioni o averne tante(0,N). L'associazione sarà uno a molti facoltativa. 
+-Prenotazione e Trattamento, questa associazione si verifica perchè in una prenotazione si può scegliere un singolo trattamento. Per ogni prenotazione può esserci uno e un solo trattamento(1,1). Per ogni trattamento si possono non avere prenotazioni o averne tante(0,N). L'associazione sarà uno a molti facoltativa per il trattamento. 
 
 -Percorso e Trattamento, questa associazione si verifica perchè un percorso è l'insieme di più trattamenti. Per ogni percorso ci deve essere minimo un trattamento e massimo molti (1,N). Per ogni trattamento può non esserci un percorso o possono essercene molti(0,N).
 L'associazione sarà molti a molti facoltativa per il trattamento.
@@ -54,7 +54,7 @@ per operatore.
 Per ogni datos_cliente deve esserci assegnato un ed un solo cliente (1;1). L'associazione che ne scaturirà sarà quindi un associazione uno a uno obbligatoria per entrambi.
 
 -medico e datos_cliente, questa associazione si verifica perchè ogni medico accede ai dati sanitari dei clienti. Ogni medico può accedere a nessun dato sanitario o più dato sanitari (0,N). 
-Per ogni dato sanitario può essere assegnato o zero o un medico (0;1). L'associazione che ne scaturirà sarà quindi un associazione uno a molti facoltativa per entrambi.   
+Per ogni dato sanitario può essere assegnato o uno o più medici (1;N). L'associazione che ne scaturirà sarà quindi un associazione uno a molti facoltativa per entrambi.   
 
 -team_medico e datos_cliente, questa associazione si verifica perchè ogni team medico accede ai dati sanitari dei clienti. Ogni team medico può accedere a nessun dato sanitario o più dato sanitari (0,N). 
 Per ogni dato sanitario può essere assegnato o zero o un team medico (0;1). L'associazione che ne scaturirà sarà quindi un associazione uno a molti facoltativa per entrambi.   
