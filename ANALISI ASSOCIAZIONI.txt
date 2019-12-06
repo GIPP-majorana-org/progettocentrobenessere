@@ -38,4 +38,26 @@ L'associazione sarà molti a molti facoltativa per il trattamento.
 
 -Nazione e Dottore, questa associazione si verifica perchè un dottore appartiene ad una nazione. Ogni dottore appartiene a una e una sola nazione(1,1). Una nazione può non avere dottori o averne molti(0,N). L'associazione sarà quindi uno a molti, facoltativa da parte della nazione.
 
+-trattamento e operatore, questa associazione si verifica perchè per ogni trattamento deve esserci almeno un operatore. Per ogni trattamento ci sarà almeno un operatore o più operatori (1,N). 
+Per ogni operatore può non essere assegnato alcuno trattamento o più (0;N). L'associazione che ne scaturirà sarà quindi un associazione molti a molti obbligatoria per trattamento e facoltativa
+per operatore.  
+
+-operatore e turno, questa associazione si verifica perchè ogni operatore ha dei turni stabiliti. Per ogni operatore ci sarà o nessun turno o più turni (0,N). 
+Per ogni turno deve esserci assegnato almeno un operatore o più (1;N). L'associazione che ne scaturirà sarà quindi un associazione molti a molti obbligatoria per turno e facoltativa
+per operatore.  
+
+-operatore e sostituzione, questa associazione si verifica perchè ogni operatore ha diritto a delle sostituizioni. Per ogni operatore ci sarà o nessuna sostituzione o più sostituzioni (0,N). 
+Per ogni sostituzione deve esserci assegnato un ed un solo operatore (1;1). L'associazione che ne scaturirà sarà quindi un associazione uno a molti obbligatoria per sostituzione e facoltativa
+per operatore.  
+
+-cliente e datos_cliente, questa associazione si verifica perchè ogni cliente ha la sua cartella con i dati sanitari propri. Per ogni cliente ci sarà una e una sola cartella sanitaria(1,1). 
+Per ogni datos_cliente deve esserci assegnato un ed un solo cliente (1;1). L'associazione che ne scaturirà sarà quindi un associazione uno a uno obbligatoria per entrambi.
+
+-medico e datos_cliente, questa associazione si verifica perchè ogni medico accede ai dati sanitari dei clienti. Ogni medico può accedere a nessun dato sanitario o più dato sanitari (0,N). 
+Per ogni dato sanitario può essere assegnato o zero o un medico (0;1). L'associazione che ne scaturirà sarà quindi un associazione uno a molti facoltativa per entrambi.   
+
+-team_medico e datos_cliente, questa associazione si verifica perchè ogni team medico accede ai dati sanitari dei clienti. Ogni team medico può accedere a nessun dato sanitario o più dato sanitari (0,N). 
+Per ogni dato sanitario può essere assegnato o zero o un team medico (0;1). L'associazione che ne scaturirà sarà quindi un associazione uno a molti facoltativa per entrambi.   
+
+
 
