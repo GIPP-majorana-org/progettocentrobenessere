@@ -84,5 +84,5 @@ codice,prezzo,scandenza,descrizione
 chiave primaria: codice;
 
 L'entità occupazione presenta i seguenti attributi:
-cod, descrizione, minp;
+cod, descrizione, minimop;
 chiave primaria: cod;
