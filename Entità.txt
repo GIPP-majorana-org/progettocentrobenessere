@@ -72,7 +72,7 @@ data,ora,esito,codice,esame,diagnostica
 chiave primaria: codice;
 
 L'entità newsletter presenta i seguenti attributi:
-titolo,descrizione,data-fondaz,tipologia,codice
+titolo,descrizione,data_iscrizione,tipologia,codice
 chiave primaria: codice;
 
 L'entità servizio_extra presenta i seguenti attributi:
