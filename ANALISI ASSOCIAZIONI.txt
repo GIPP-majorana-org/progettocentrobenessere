@@ -1,19 +1,9 @@
 La realtà che vogliamo gestire è quella di un'azienda che possiede una rete di centri benessere.
 Abbiamo varie entità e per ogni entità si verificano molte associazioni.
 
--Prenotazione e Centro Benessere, questa associazione si verifica perchè per entrare in un centro benessere ed utilizzare le sue risorse c'è prima bisogno di una prenotazione. Per ogni prenotazione si potrà avere uno e  un solo centro
-benessere (1,1). Per ogni centro benessere invece si possono non avere prenotazioni o averne molte(0,N). L'associazione che ne scaturirà sarà quindi un'associazione uno a molti 1:N, non obbligatoria da parte del centro benessere.
+-Prenotazione e struttura, questa associazione si verifica perchè per accedere alla struttura il cliente deve effettuare una prenotazione. Per ogni prenotazione si può associare una e una sola struttura(1,1). Per ogni struttura si possono associare zero o più prenotazioni(0,N). L'associazione sarà uno a molti obbligatoria per prenotazione,facotativa per struttura.
 
--Prenotazione e Palestra, questa associazione si verifica perchè per entrare in una palestra ed utilizzare le sue risorse c'è prima bisogno di una prenotazione. Per ogni prenotazione si potrà avere una e  una sola palestra (1,1).
- Per ogni palestra invece si possono non avere prenotazioni o averne molte(0,N). L'associazione che ne scaturirà sarà quindi un'associazione uno a molti 1:N, non obbligatoria da parte della palestra.
-
--Prenotazione e SPA, questa associazione si verifica perchè per entrare in una SPA ed utilizzare le sue risorse c'è prima bisogno di una prenotazione. Per ogni prenotazione si potrà avere una e una sola SPA (1,1).
- Per ogni SPA invece si possono non avere prenotazioni o averne molte(0,N). L'associazione che ne scaturirà sarà quindi un'associazione uno a molti 1:N, non obbligatoria da parte della SPA
- 
--Prenotazione e Centro Termale, questa associazione si verifica perchè per entrare in un centro termale ed utilizzare le sue risorse c'è prima bisogno di una prenotazione. Per ogni prenotazione si potrà avere uno e  un solo centro
-termale (1,1). Per ogni centro termale invece si possono non avere prenotazioni o averne molte(0,N). L'associazione che ne scaturirà sarà quindi un'associazione uno a molti 1:N, non obbligatoria da parte del centro termale.
-
--Prenotazione e Cliente, questa associazione si verifica perchè per accedere alle varie risorse il cliente deve effettuare una prenotazione. Per ogni prenotazione si può associare uno e un solo cliente(1,1). Per ogni cliente si possono associare più associazioni(1,N). L'associazione sarà uno a molti obbligatoria.
+-Prenotazione e Cliente, questa associazione si verifica perchè per accedere alle varie risorse il cliente deve effettuare una prenotazione. Per ogni prenotazione si può associare una e un solo cliente(1,1). Per ogni cliente si possono associare più prenotazioni(1,N). L'associazione sarà uno a molti obbligatoria da entrambi.
 
 -Prenotazione e Percorso, questa associazione si verifica perchè in una prenotazione si può scegliere un percorso. Per ogni prenotazione può non esserci un percorso o sceglierne al massimo uno(0,1). Per ogni percorso si possono non avere prenotazioni o averne tante(0,N). L'associazione sarà uno a molti facoltativa.
 
