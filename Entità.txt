@@ -7,21 +7,9 @@ L'entita nazione presenta i seguenti attributi:
 nome;
 chiave primaria: nome;
 
-L'entità SPA presenta i seguenti attributi:
-codice, nome, indirizzo, n_telefono, email;
-chiave primaria: codice;
-
-L'entità palestra presenta i seguenti attributi:
-codice, nome, indirizzo, n_telefono, email;
-chiave primaria: codice;
-
-L'entità centro_benessere presenta i seguenti attributi:
-codice, nome, indirizzo,n_telefono, email;
-chiave primaria: codice;
-
-L'entità centro_termale presenta i seguenti attributi:
-codice, nome, indirizzo, n_telefono, email;
-chiave primaria: codice;
+L'entità struttura presenta i seguenti attributi:
+codice_s,tipo,nome,indirizzo,n_telefono,email,;
+chiave primaria: codice_s;
 
 L'entità prenotazione presenta i seguenti attributi:
 codice_p, data_prenotazione, data_i, data_f, disdetta, email disdetta;
@@ -78,3 +66,7 @@ chiave primaria: codice;
 L'entità occupazione presenta i seguenti attributi:
 cod, descrizione, minimop;
 chiave primaria: cod;
+
+L'entità consulto_medico presenta i seguenti attributi:
+codice_consulto,rapp_condiz,referto_m;
+chiave primaria: codice_consulto;
