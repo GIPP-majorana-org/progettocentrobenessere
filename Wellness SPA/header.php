@@ -2,7 +2,7 @@
 <head>
 </head>
 <body>
-  <div class="container">
+  <div class="container-fluid mx-auto text-center">
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <a class="navbar-brand" href="#">Wellness SPA</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -19,6 +19,7 @@
       <a class="nav-item nav-link mx-1" href="#">Contatti</a>
       <a class="nav-item nav-link mr-5 ml-1" href="#">Chi Siamo</a>
       <button type="submit" class="ml-5 btn btn-dark" onclick="window.location.href = 'signup.php';">Registrati</button>
+      <button type="submit" class="ml-5 btn btn-dark" onclick="window.location.href = 'signin.php';">Accedi</button>
     </div>
 </nav>
 </div>

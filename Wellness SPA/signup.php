@@ -12,7 +12,7 @@ include 'links.php';
 </div>
 <div class="container py-3">
   <h3>Registrati adesso</h3>
-  <form>
+  <form action="signin.php" method="POST">
     <div class="form-group col-md-4 py-2 mx-auto">
       <label for="inputEmail4">Email</label>
       <input type="email" class="form-control" id="inputEmail4">
@@ -21,19 +21,19 @@ include 'links.php';
       <label for="inputPassword4">Password</label>
       <input type="password" class="form-control" id="inputPassword4">
     </div>
-    <div class="form-group py-2 mx-auto">
-      <label for="example-date-input" class="col-8 col-form-label mx-auto">Date</label>
+    <div class="form-group py-2">
+      <label for="example-date-input" class="col-8 col-form-label text-center mx-4">Date</label>
       <div class="col-4  mx-auto">
         <input class="form-control" type="date" value="" id="example-date-input">
       </div>
     </div>
   <div class="form-group col-md-4 py-2 mx-auto">
     <label for="inputAddress">Address</label>
-    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+    <input type="text" class="form-control" id="inputAddress" placeholder="">
   </div>
   <div class="form-group col-md-4 py-2 mx-auto">
     <label for="inputAddress2">Address 2</label>
-    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+    <input type="text" class="form-control" id="inputAddress2" placeholder="">
   </div>
     <div class="form-group col-md-4 py-2 mx-auto">
       <label for="inputCity">City</label>
@@ -50,15 +50,17 @@ include 'links.php';
       <label for="inputZip">Zip</label>
       <input type="text" class="form-control" id="inputZip">
     </div>
-  <div class="form-group py-3 mx-auto">
+  <div class="form-group py-3 mx-auto text-center">
     <div class="form-check  mx-auto">
-      <input class="form-check-input mx-auto" type="checkbox" id="gridCheck">
-      <label class="form-check-label mx-auto" for="gridCheck">
+      <input class="form-check-input" type="checkbox" id="gridCheck">
+      <label class="form-check-label" for="gridCheck">
         Check me out
       </label>
     </div>
   </div>
-  <button type="submit" class="btn btn-primary mx-auto">Sign in</button>
+  <div class="mx-auto text-center">
+  <button type="submit" class="ml-5 btn btn-dark">Registrati</button>
+</div>
 </form>
 </div>
 </body>
