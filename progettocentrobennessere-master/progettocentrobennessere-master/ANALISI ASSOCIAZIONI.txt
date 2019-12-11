@@ -1,0 +1,94 @@
+La realtà che vogliamo gestire è quella di un'azienda che possiede una rete di centri benessere.
+Abbiamo varie entità e per ogni entità si verificano molte associazioni.
+
+-Prenotazione e Centro Benessere, questa associazione si verifica perchè per entrare in un centro benessere ed utilizzare le sue risorse c'è prima bisogno di una prenotazione. Per ogni prenotazione si potrà avere uno e  un solo centro
+benessere (1,1). Per ogni centro benessere invece si possono non avere prenotazioni o averne molte(0,N). L'associazione che ne scaturirà sarà quindi un'associazione uno a molti 1:N, non obbligatoria da parte del centro benessere.
+
+-Prenotazione e Palestra, questa associazione si verifica perchè per entrare in una palestra ed utilizzare le sue risorse c'è prima bisogno di una prenotazione. Per ogni prenotazione si potrà avere una e  una sola palestra (1,1).
+ Per ogni palestra invece si possono non avere prenotazioni o averne molte(0,N). L'associazione che ne scaturirà sarà quindi un'associazione uno a molti 1:N, non obbligatoria da parte della palestra.
+
+-Prenotazione e SPA, questa associazione si verifica perchè per entrare in una SPA ed utilizzare le sue risorse c'è prima bisogno di una prenotazione. Per ogni prenotazione si potrà avere una e una sola SPA (1,1).
+ Per ogni SPA invece si possono non avere prenotazioni o averne molte(0,N). L'associazione che ne scaturirà sarà quindi un'associazione uno a molti 1:N, non obbligatoria da parte della SPA
+ 
+-Prenotazione e Centro Termale, questa associazione si verifica perchè per entrare in un centro termale ed utilizzare le sue risorse c'è prima bisogno di una prenotazione. Per ogni prenotazione si potrà avere uno e  un solo centro
+termale (1,1). Per ogni centro termale invece si possono non avere prenotazioni o averne molte(0,N). L'associazione che ne scaturirà sarà quindi un'associazione uno a molti 1:N, non obbligatoria da parte del centro termale.
+
+-Prenotazione e Cliente, questa associazione si verifica perchè per accedere alle varie risorse il cliente deve effettuare una prenotazione. Per ogni prenotazione si può associare uno e un solo cliente(1,1). Per ogni cliente si possono associare più associazioni(1,N). L'associazione sarà uno a molti obbligatoria.
+
+-Prenotazione e Percorso, questa associazione si verifica perchè in una prenotazione si può scegliere un percorso. Per ogni prenotazione può non esserci un percorso o sceglierne al massimo uno(0,1). Per ogni percorso si possono non avere prenotazioni o averne tante(0,N). L'associazione sarà uno a molti facoltativa.
+
+-Prenotazione e Trattamento, questa associazione si verifica perchè in una prenotazione si può scegliere un singolo trattamento. Per ogni prenotazione può esserci uno e un solo trattamento(1,1). Per ogni trattamento si possono non avere prenotazioni o averne tante(0,N). L'associazione sarà uno a molti facoltativa per il trattamento. 
+
+-Percorso e Trattamento, questa associazione si verifica perchè un percorso è l'insieme di più trattamenti. Per ogni percorso ci deve essere minimo un trattamento e massimo molti (1,N). Per ogni trattamento può non esserci un percorso o possono essercene molti(0,N).
+L'associazione sarà molti a molti facoltativa per il trattamento.
+
+-Città e Centro Benessere, questa associazione si verifica perchè il centro benessere è posizionato in una determinata città. Per ogni città può non esserci alcun centro benessere oppure ce ne possono essere molti (0,N). Un centro benessere invece risiede in una e una sola città (1,1). L'associazione sarà quindi un'associazione uno a molti 1:N, facoltativa da parte del centro benessere.
+
+-Città e Palestra, questa associazione si verifica perchè la palestra è posizionata in una determinata città. Per ogni città può non esserci alcuna palestra oppure ce ne possono essere molte (0,N). Una palestra invece risiede in una e una sola città (1,1). L'associazione sarà quindi un'associazione uno a molti 1:N, facoltativa da parte della palestra.
+
+-Città e SPA, questa associazione si verifica perchè la SPA è posizionato in una determinata città. Per ogni città può non esserci alcuna SPA oppure ce ne possono essere molte (0,N). Una SPA invece risiede in una e una sola città (1,1). L'associazione sarà quindi un'associazione uno a molti 1:N, facoltativa da parte della SPA.
+
+-Città e Centro Termale, questa associazione si verifica perchè il centro termale è posizionato in una determinata città. Per ogni città può non esserci alcun centro termale oppure ce ne possono essere molti (0,N). Un centro termale invece può risiedere in una e una sola città (1,1). L'associazione sarà quindi un'associazione uno a molti 1:N, facoltativa da parte del centro termale.
+
+-Città e Nazione, questa associazione si verifica perchè una città appartiene ad una nazione. Per ogni città si ha una e una sola nazione(1,1). Una nazione invece ha un minimo di una città e un massimo di molte(1,N). L'associazione sarà quindi un'associazione uno a molti 1:N obbligatoria.
+
+-Nazione e Cliente, questa associazione si verifica perchè un cliente appartiene ad una nazione. Ogni cliente appartiene a una e una sola nazione(1,1). Una nazione può non avere clienti o averne molti(0,N). L'associazione sarà quindi uno a molti, facoltativa da parte della nazione.
+
+-Nazione e Operatore, questa associazione si verifica perchè un operatore appartiene ad una nazione. Ogni operatore appartiene a una e una sola nazione(1,1). Una nazione può non avere operatori o averne molti(0,N). L'associazione sarà quindi uno a molti, facoltativa da parte della nazione.
+
+-Nazione e Dottore, questa associazione si verifica perchè un dottore appartiene ad una nazione. Ogni dottore appartiene a una e una sola nazione(1,1). Una nazione può non avere dottori o averne molti(0,N). L'associazione sarà quindi uno a molti, facoltativa da parte della nazione.
+
+-trattamento e operatore, questa associazione si verifica perchè per ogni trattamento deve esserci almeno un operatore. Per ogni trattamento ci sarà almeno un operatore o più operatori (1,N). 
+Per ogni operatore può non essere assegnato alcuno trattamento o più (0;N). L'associazione che ne scaturirà sarà quindi un associazione molti a molti obbligatoria per trattamento e facoltativa
+per operatore.  
+
+-operatore e turno, questa associazione si verifica perchè ogni operatore ha dei turni stabiliti. Per ogni operatore ci sarà o nessun turno o più turni (0,N). 
+Per ogni turno deve esserci assegnato almeno un operatore o più (1;N). L'associazione che ne scaturirà sarà quindi un associazione molti a molti obbligatoria per turno e facoltativa
+per operatore.  
+
+-operatore e sostituzione, questa associazione si verifica perchè ogni operatore ha diritto a delle sostituizioni. Per ogni operatore ci sarà o nessuna sostituzione o più sostituzioni (0,N). 
+Per ogni sostituzione deve esserci assegnato un ed un solo operatore (1;1). L'associazione che ne scaturirà sarà quindi un associazione uno a molti obbligatoria per sostituzione e facoltativa
+per operatore.  
+
+-cliente e datos_cliente, questa associazione si verifica perchè ogni cliente ha la sua cartella con i dati sanitari propri. Per ogni cliente ci sarà una e una sola cartella sanitaria(1,1). 
+Per ogni datos_cliente deve esserci assegnato un ed un solo cliente (1;1). L'associazione che ne scaturirà sarà quindi un associazione uno a uno obbligatoria per entrambi.
+
+-medico e datos_cliente, questa associazione si verifica perchè ogni medico accede ai dati sanitari dei clienti. Ogni medico può accedere a nessun dato sanitario o più dato sanitari (0,N). 
+Per ogni dato sanitario può essere assegnato o uno o più medici (1;N). L'associazione che ne scaturirà sarà quindi un associazione uno a molti facoltativa per entrambi.   
+
+-team_medico e datos_cliente, questa associazione si verifica perchè ogni team medico accede ai dati sanitari dei clienti. Ogni team medico può accedere a nessun dato sanitario o più dato sanitari (0,N). 
+Per ogni dato sanitario può essere assegnato o zero o un team medico (0;1). L'associazione che ne scaturirà sarà quindi un associazione uno a molti facoltativa per entrambi.   
+
+-Cliente e Consulto medico, questa associazione si verifica quando il cliente si fa visitare.
+ Per ogni cliente si può non avere nessun consulto medico o più consulti medici (0,N).
+ Per ogni consulto medico invece si può avere uno e un solo cliente (1,1).
+ L'associazione che ne scaturirà sarà quindi un associazione uno a molti 1:N, non obbligatoria da parte del cliente.
+ 
+-Medico e Consulto medico, questa associazione si verifica quando il medico chiede una visita da parte del consulto medico.        
+ Per ogni medico, si può anche non richiedere un consulto medico o si possono richiedere più consulti medici(0,N).
+ Per ogni consulto medico, si può avere uno e un solo medico(1,1).
+ L'associazione che ne scaturirà sarà quindi un associazione uno a molti 1:N, non obbligatoria da parte del medico.
+ 
+-Medico e rapporto condizioni medico sanitaria, questa associazione si verifica quando il medico effettua un controllo sulla struttura.
+ Per ogni medico, può esserci nessun controllo oppure solo uno(0,1).
+ Per ogni rapporto condizioni medico sanitaria, è effettuato da uno e un solo medico(1,1).
+ L'associazione che ne scaturirà sarà quindi un associazione 1:1, obbligatoria da entrambi le parti.
+ 
+-Medico e referto medico, questa associazione si verifica quando un medico controlla il referto medico di un cliente.
+ Per ogni medico, può non esserci un controllo o al massimo uno(0,1).
+ Per ogni referto medico, può essere associato ad uno e un solo medico(1,1).
+ L'associazione che ne scaturirà sarà quindi un associazione 1:1, facoltativa da parte del medico.
+ 
+-Cliente e newsletter, questa associazione si verifica quando un cliente si iscrive alla newsletter
+ Per ogni cliente, può non iscriversi alla newsletter o solamente una newsletter(0,1).
+ Per ogni newsletter, può non essere associato nessun client o più clienti(0,N).
+ L'associazione che ne scaturirà sarà quindi un associazione 1:N, facoltativa da entrambi le parti.
+ 
+-Cliente e portafoglio virtuale, questa associazione si verifica quando un cliente crea un proprio portafoglio virtuale.
+ Per ogni cliente, può essere associato nessun portafoglio virtuale o uno solo(0,1).
+ Per ogni portafoglio virtuale, può essere associato uno e un solo cliente.(1,1)
+ L'associazione che ne scaturirà sarà quindi un associazione 1:1, facoltativa da parte del cliente.
+ 
+-Operatore e occupazione, questa associazione si verifica quando un operatore viene assegnato in un posto.
+ Per ogni operatore, può essere associato 
+
