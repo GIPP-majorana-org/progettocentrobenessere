@@ -69,16 +69,6 @@ Per ogni dato sanitario può essere assegnato o zero o un team medico (0;1). L'a
  Per ogni consulto medico, si può avere uno e un solo medico(1,1).
  L'associazione che ne scaturirà sarà quindi un associazione uno a molti 1:N, non obbligatoria da parte del medico.
  
--Medico e rapporto condizioni medico sanitaria, questa associazione si verifica quando il medico effettua un controllo sulla struttura.
- Per ogni medico, può esserci nessun controllo oppure solo uno(0,1).
- Per ogni rapporto condizioni medico sanitaria, è effettuato da uno e un solo medico(1,1).
- L'associazione che ne scaturirà sarà quindi un associazione 1:1, obbligatoria da entrambi le parti.
- 
--Medico e referto medico, questa associazione si verifica quando un medico controlla il referto medico di un cliente.
- Per ogni medico, può non esserci un controllo o al massimo uno(0,1).
- Per ogni referto medico, può essere associato ad uno e un solo medico(1,1).
- L'associazione che ne scaturirà sarà quindi un associazione 1:1, facoltativa da parte del medico.
- 
 -Cliente e newsletter, questa associazione si verifica quando un cliente si iscrive alla newsletter
  Per ogni cliente, può non iscriversi alla newsletter o solamente una newsletter(0,1).
  Per ogni newsletter, può non essere associato nessun client o più clienti(0,N).
