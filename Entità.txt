@@ -63,14 +63,6 @@ L'entità datos_cliente presenta i seguenti attributi:
 patologie,tipo_sangue,codice
 chiave primaria: codice;
 
-L'entità rapp_condiz presenta i seguenti attributi:
-data,ora,esito,codice,titolo
-chiave primaria: codice;
-
-L'entità referto_m presenta i seguenti attributi:
-data,ora,esito,codice,esame,diagnostica
-chiave primaria: codice;
-
 L'entità newsletter presenta i seguenti attributi:
 titolo,descrizione,data_iscrizione,tipologia,codice
 chiave primaria: codice;
