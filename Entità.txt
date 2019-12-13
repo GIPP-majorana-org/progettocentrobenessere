@@ -68,5 +68,5 @@ cod, descrizione, minimop;
 chiave primaria: cod;
 
 L'entità consulto_medico presenta i seguenti attributi:
-codice_consulto,rapp_condiz,referto_m;
+codice_consulto,rapp_condiz,referto_m,esito,ora,data;
 chiave primaria: codice_consulto;
