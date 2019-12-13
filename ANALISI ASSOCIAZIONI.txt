@@ -12,13 +12,7 @@ Abbiamo varie entità e per ogni entità si verificano molte associazioni.
 -Percorso e Trattamento, questa associazione si verifica perchè un percorso è l'insieme di più trattamenti. Per ogni percorso ci deve essere minimo un trattamento e massimo molti (1,N). Per ogni trattamento può non esserci un percorso o possono essercene molti(0,N).
 L'associazione sarà molti a molti facoltativa per il trattamento.
 
--Città e Centro Benessere, questa associazione si verifica perchè il centro benessere è posizionato in una determinata città. Per ogni città può non esserci alcun centro benessere oppure ce ne possono essere molti (0,N). Un centro benessere invece risiede in una e una sola città (1,1). L'associazione sarà quindi un'associazione uno a molti 1:N, facoltativa da parte del centro benessere.
-
--Città e Palestra, questa associazione si verifica perchè la palestra è posizionata in una determinata città. Per ogni città può non esserci alcuna palestra oppure ce ne possono essere molte (0,N). Una palestra invece risiede in una e una sola città (1,1). L'associazione sarà quindi un'associazione uno a molti 1:N, facoltativa da parte della palestra.
-
--Città e SPA, questa associazione si verifica perchè la SPA è posizionato in una determinata città. Per ogni città può non esserci alcuna SPA oppure ce ne possono essere molte (0,N). Una SPA invece risiede in una e una sola città (1,1). L'associazione sarà quindi un'associazione uno a molti 1:N, facoltativa da parte della SPA.
-
--Città e Centro Termale, questa associazione si verifica perchè il centro termale è posizionato in una determinata città. Per ogni città può non esserci alcun centro termale oppure ce ne possono essere molti (0,N). Un centro termale invece può risiedere in una e una sola città (1,1). L'associazione sarà quindi un'associazione uno a molti 1:N, facoltativa da parte del centro termale.
+-Città e struttura, questa associazione esiste perchè una struttura deve appartenere necessariamente ad una città. per ogni città può non esserci o esserci più strutture (0;N). per ogni struttura deve essereci per forza una città (1,1), quindi questa associazione è di tipo 1:N obbligatoria per città e facoltativa per struttura. 
 
 -Città e Nazione, questa associazione si verifica perchè una città appartiene ad una nazione. Per ogni città si ha una e una sola nazione(1,1). Una nazione invece ha un minimo di una città e un massimo di molte(1,N). L'associazione sarà quindi un'associazione uno a molti 1:N obbligatoria.
 
