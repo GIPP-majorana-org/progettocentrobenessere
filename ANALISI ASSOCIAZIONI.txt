@@ -64,5 +64,6 @@ Per ogni dato sanitario può essere assegnato o zero o un team medico (0;1). L'a
  L'associazione che ne scaturirà sarà quindi un associazione 1:1, facoltativa da parte del cliente.
  
 -Operatore e occupazione, questa associazione si verifica quando un operatore viene assegnato in un posto.
- Per ogni operatore, può essere associato 
+ Per ogni operatore, può essere associata una ed una sola occupazione (1;1); per ogni occupazione vengono associate uno o più operatori(1;N).
+ L'associazione che ne scaturirà sarà quindi un associazione 1:N, obbligatoria per entrambi.
 
