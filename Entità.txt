@@ -8,12 +8,12 @@ nome;
 chiave primaria: nome;
 
 L'entità struttura presenta i seguenti attributi:
-codice_s,tipo,nome,indirizzo,n_telefono,email,;
-chiave primaria: codice_s;
+codice,tipo,nome,indirizzo,n_telefono,email;
+chiave primaria: codice;
 
 L'entità prenotazione presenta i seguenti attributi:
-codice_p, data_prenotazione, data_i, data_f, disdetta, email disdetta;
-chiave primaria: codice_p;
+codice, data_prenotazione, data_i, data_f, disdetta, email disdetta;
+chiave primaria: codice;
 
 L'entità cliente presenta i seguenti attributi:
 nome, cognome, indirizzo, email, n_telefono, cf, data_nascita;
@@ -21,7 +21,7 @@ chiave primaria: cf;
 
 L'entità trattamento presenta i seguenti attributi:
 cod, descrizione;
-chiave primaria: cod;
+chiave primaria: codice;
 
 L'entità percorso presenta i seguenti attributi:
 codice, descrizione, nome, durata, tipologia, beneficio;
@@ -32,27 +32,27 @@ ragione_sociale, indirizzo, n_telefono, email, data_nascita, cf;
 chiave primaria: cf;
 
 L'entità turno presenta i seguenti attributi:
-ora_in,ora_fi,descrizione,codice
+ora_in,ora_fi,descrizione,codice;
 chiave primaria: codice;
 
 L'entità sostituzione presenta i seguenti attributi:
-ora_in,ora_fi,descrizione,codice,nome_sos
+ora_in,ora_fi,descrizione,codice,nome_sos;
 chiave primaria: codice;
 
 L'entità medico presenta i seguenti attributi:
-nome,cognome,c_f,cellulare,email,t_studio
-chiave primaria: c_f;
+nome,cognome,cf,cellulare,email,t_studio;
+chiave primaria: cf;
 
 L'entità team_medico presenta i seguenti attributi:
-nome,n_componenti,specializzazione,descrizione,codice
+nome,n_componenti,specializzazione,descrizione,codice;
 chiave primaria: codice;
 
 L'entità datos_cliente presenta i seguenti attributi:
-patologie,tipo_sangue,codice
+patologie,tipo_sangue,codice;
 chiave primaria: codice;
 
 L'entità newsletter presenta i seguenti attributi:
-titolo,descrizione,data_iscrizione,tipologia,codice
+titolo,descrizione,data_iscrizione,tipologia,codice;
 chiave primaria: codice;
 
 L'entità servizio_extra presenta i seguenti attributi:
@@ -60,13 +60,13 @@ nome,tipolgia,descrizione,aggiunta,codice;
 chiave primaria: codice;
 
 L'entità portaf_virt presenta i seguenti attributi:
-codice,prezzo,scandenza,descrizione
+codice,prezzo,scandenza,descrizione;
 chiave primaria: codice;
 
 L'entità occupazione presenta i seguenti attributi:
-cod, descrizione, minimop;
-chiave primaria: cod;
+codice, descrizione, minimop;
+chiave primaria: codice;
 
 L'entità consulto_medico presenta i seguenti attributi:
-codice_consulto,rapp_condiz,referto_m,esito,ora,data;
-chiave primaria: codice_consulto;
+codice,rapp_condiz,referto_m,esito,ora,data;
+chiave primaria: codice;
