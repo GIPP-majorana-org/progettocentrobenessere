@@ -1,0 +1,35 @@
+nome e cognome dei clienti di Ragusa che hanno effettuato una prenotazione in data 31-03-2020
+
+temp= selezione di prenotazione su data_prenotazione="31-03-2020";
+temp1= congiunzione di temp e clienti su temp.cliente=cliente.CF;
+temp2= congiunzione di temp1 e nazione su temp1.NAZIONE=nazioni.nome;
+temp3= congiunzione di temp2 e città su temp2.nome=città.CAP;
+temp4= selezione di temp3 su città.nome="Ragusa";
+temp5= proiezione di temp4 su nome e cognome;
+
+
+descrizione dei trattamenti relativi al percorso di durata 30 minuti, effettuati con la prenotazione in data 23-02-2020 
+
+temp=selezione di prenotazione su data_prenotazione="23-02-2020";
+temp1=congiunzione di temp e percorso su temp.PERCORSO=percorsi.CODICE;
+temp2=selezione di temp1 su temp1.durata="30";
+temp3=congiunzione di temp2 e trattamenti su temp2.trattamento=trattamenti.CODICE;
+temp4=proiezione di temp3 su trattamenti.descrizione;
+
+
+nome del sostituto/a in servizio nella città Bergamo.
+
+temp=selezione di città su nome="Bergamo";
+temp1= congiunzione di città e nazione su temp.CAP=nazioni.nome;
+temp2= congiunzione di temp1 e operatori su nazioni.nome=operatori.CF;
+temp3= congiunzione di temp2 e sostituzione su temp2.CF= sostituzioni.CODICE;
+temp4= proiezione di temp3 su nome_sos;
+
+
+scadenza del portafoglio virtuale del cliente iabichella iscritto alla newsletter con titolo uomini e donne.
+
+temp=selezione di newsletter su titolo="uomini e donne";
+temp1= congiunzione di temp e cliente su temp.codice=clienti.NEWSLETTER;
+temp2= selezione di temp1 su temp1.cognome="Iabichella";
+temp3= congiunzione di temp2 e portaf_virt su portaf_virt.CLIENTE=temp2.CF;
+temp4= Proiezione di temp3 su scadenza;
