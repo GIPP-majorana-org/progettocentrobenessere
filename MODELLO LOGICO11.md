@@ -1,8 +1,8 @@
-Citt‡(**NOME**, cap, *NAZIONE*)
+Citt√†(**CAP**, nome, *NAZIONE*)
 
 Nazioni(**NOME**)
 
-Strutture(**CODICE**, tipo, nome, indirizzo, n_telefono, email, *CITT‡*)
+Strutture(**CODICE**, tipo, nome, indirizzo, n_telefono, email, *CITT√†*)
 
 Prenotazioni(**CODICE**, data_prenotazione, data_i, data_f, disdetta, email_disdetta, *STRUTTURA, CLIENTE, PERCORSO, TRATTAMENTO*)
 
