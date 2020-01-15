@@ -3,24 +3,24 @@
 </head>
 <body>
   <div class="container-fluid mx-auto text-center">
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Wellness SPA</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+<nav class="navbar navbar-dark navbar-expand-lg fixed-top" style="background-color:#474167;">
+  <a class="navbar-brand" href="#">
+    <img src="images/logo.png" width="100" height="100" alt="">
+  </a>
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav">
-      <a class="nav-item nav-link active" href="index.php">Home <span class="sr-only">(current)</span></a>
-      <a class="nav-item nav-link mx-1" href="#">Centri Benessere</a>
-      <a class="nav-item nav-link mx-1 " href="#">Palestre</a>
-      <a class="nav-item nav-link mx-1" href="#">SPA</a>
-      <a class="nav-item nav-link mx-1" href="#">Centri Termali</a>
-      <a class="nav-item nav-link mx-1" href="#">Galleria</a>
-      <a class="nav-item nav-link mx-1" href="#">Contatti</a>
-      <a class="nav-item nav-link mr-5 ml-1" href="#">Chi Siamo</a>
-      <button type="submit" class="ml-5 btn btn-dark" onclick="window.location.href = 'signup.php';">Registrati</button>
-      <button type="submit" class="ml-5 btn btn-dark" onclick="window.location.href = 'signin.php';">Accedi</button>
+      <a class="nav-item nav-link active font-weight-bold mx-4"style="font-size:20px;" href="index.php">Home <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link mx-4" style="font-size:20px;" href="centribenessere.php">Centri Benessere</a>
+      <a class="nav-item nav-link mx-4 " style="font-size:20px;" href="palestre.php">Palestre</a>
+      <a class="nav-item nav-link mx-4" style="font-size:20px;" href="spa.php">SPA</a>
+      <a class="nav-item nav-link mx-4" style="font-size:20px;" href="centritermali.php">Centri Termali</a>
+      <a class="nav-item nav-link mx-4" style="font-size:20px;" href="galleria.php">Galleria</a>
+      <a class="nav-item nav-link mx-4" style="font-size:20px;" href="contatti.php">Contatti</a>
+      <a class="nav-item nav-link mr-5 ml-4"style="font-size:20px;" href="chisiamo.php">Chi Siamo</a>
+      <button type="submit" class="mx-5 btn btn-light float-right" style="font-size:20px;" onclick="window.location.href = 'signup.php';">Registrati</button>
+      <button type="submit" class="mx-5 btn btn-light float-right " style="font-size:20px;" onclick="window.location.href = 'signin.php';">Accedi</button>
     </div>
+  </div>
 </nav>
 </div>
 </body>
