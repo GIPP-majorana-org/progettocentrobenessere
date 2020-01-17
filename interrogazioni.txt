@@ -3,8 +3,8 @@ nome e cognome dei clienti di Ragusa che hanno effettuato una prenotazione in da
 temp= selezione di prenotazione su data_prenotazione="31-03-2020";
 temp1= congiunzione di temp e clienti su temp.cliente=cliente.CF;
 temp2= congiunzione di temp1 e nazione su temp1.NAZIONE=nazioni.nome;
-temp3= congiunzione di temp2 e citt‡ su temp2.nome=citt‡.CAP;
-temp4= selezione di temp3 su citt‡.nome="Ragusa";
+temp3= congiunzione di temp2 e citt√† su temp2.nome=citt√†.CAP;
+temp4= selezione di temp3 su citt√†.nome="Ragusa";
 temp5= proiezione di temp4 su nome e cognome;
 
 
@@ -17,19 +17,65 @@ temp3=congiunzione di temp2 e trattamenti su temp2.trattamento=trattamenti.CODIC
 temp4=proiezione di temp3 su trattamenti.descrizione;
 
 
-nome del sostituto/a in servizio nella citt‡ Bergamo.
+nome del sostituto/a in servizio nella citt√† Bergamo.
 
-temp=selezione di citt‡ su nome="Bergamo";
-temp1= congiunzione di citt‡ e nazione su temp.CAP=nazioni.nome;
+temp=selezione di citt√† su nome="Bergamo";
+temp1= congiunzione di citt√† e nazione su temp.CAP=nazioni.nome;
 temp2= congiunzione di temp1 e operatori su nazioni.nome=operatori.CF;
 temp3= congiunzione di temp2 e sostituzione su temp2.CF= sostituzioni.CODICE;
 temp4= proiezione di temp3 su nome_sos;
 
 
-scadenza del portafoglio virtuale del cliente iabichella iscritto alla newsletter con titolo uomini e donne.
+scadenza del portafoglio virtuale del cliente iabichella iscritto alla newsletter con titolo sconti odierni.
 
 temp=selezione di newsletter su titolo="uomini e donne";
 temp1= congiunzione di temp e cliente su temp.codice=clienti.NEWSLETTER;
 temp2= selezione di temp1 su temp1.cognome="Iabichella";
 temp3= congiunzione di temp2 e portaf_virt su portaf_virt.CLIENTE=temp2.CF;
 temp4= Proiezione di temp3 su scadenza;
+
+
+nome e cognome del medico tedesco che compie un consulto in data "07/06/2020" al cliente Puglisi Marco;
+
+temp= congiunzione di medici e nazioni su medici.CF= nazioni.nome;
+temp1= congiunzione di temp e consulti_medici su temp.CF=consulti_medici.medico;
+temp2= congiunzione di temp1 e cliente su consulti_medici.cliente=cliente.CF;
+temp3= selezione di temp2 su consulti_medici.data="07/06/2020";
+temp4= selezione di temp3 su clienti.nome="Marco", e su clienti.cognome="Puglisi";
+temp5= selezione di temp4 su medici.nazione="Germania";
+temp6= proiezione di temp5 su medici.nome e medici.cognome;
+
+
+Ragione sociale dell'operatore francese che ha iniziato il turno alle ore "11:00";
+
+temp= congiunzione di operatore e nazione su operatori.nazioni= nazioni.nome;
+temp1= selezione di temp su nazioni.nome="Francia";
+temp2= congiunzione di temp1 e turnooperatore su operatori.cf=turnooperatore.operatore;
+temp3= congiunzione di temp2 e turni su turnooperatore.turno=turni.codice;
+temp4= selezione di temp3 su turni.ora_in="11:00";
+temp5= proiezione di temp4 su operatori.ragione_sociale;
+
+
+Ragione sociale degli operatori che si occupa di un tipo di percorso chiamato "Alpha" con prenotazione in data "10/05/2020";
+
+
+temp=congiunzione di operatore e trattaoperatore su trattaoperatore.operatore=operatori.cf;
+temp1= congiunzione di temp e trattamenti su trattaoperatore.trattamento=trattamenti.codice;
+temp2= congiunzione di temp1 e prenotazioni su prenotazioni.trattamento=trattamenti.codice;
+temp3= congiunzione di temp2 e percorso su prenotazioni.percorso=percorsi.codice;
+temp4= selezione di temp3 su percorsi.nome="Alpha";
+temp5= selezione di temp4 su prenotazioni.data_prenotazione="10/05/2020";
+temp6= proiezione di temp5 su operatori.ragione_sociale;
+
+
+nome e cognome del cliente con data inizio="23/09/2020" che ha richiesto come servizio extra "Recupero Funzionale H2O";
+
+temp=congiunzione di cliente e prenotazione su prenotazioni.cliente=client.CF;
+temp1=congiunzione di temp e serviziextraprenotazione su serviziextraprenotazione.prenotazione=prenotazioni.codice;
+temp2= congiunzione di temp1 e servizi_extra su serviziextraprenotazione.servizio_extra=servizi_extra.codice;
+temp3= selezione di temp2 su servizi_extra.nome="Recupero Funzionale H2O";
+temp4= selezione di temp3 su prenotazioni.data_i="23/09/2020";
+temp5= proiezione di temp4 su clienti.nome e clienti.cognome;
+
+
+
