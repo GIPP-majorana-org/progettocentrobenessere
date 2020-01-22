@@ -78,4 +78,11 @@ temp4= selezione di temp3 su prenotazioni.data_i="23/09/2020";
 temp5= proiezione di temp4 su clienti.nome e clienti.cognome;
 
 
+nome team medico che ha gestito la patologia "Dermatite" dei clienti nati nel "1987".
+
+temp= congiunzione di team_medici e cliente su team_medici.codice= clienti.team_medico;
+temp1= selezione di temp su clienti.patologie="Dermatite";
+temp2= selezione di temp1 su clienti.data_nascita="1987";
+temp3= proiezione di temp2 su team_medici.nome;
+
 
