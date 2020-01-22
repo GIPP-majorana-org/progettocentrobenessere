@@ -31,22 +31,27 @@ include 'header.php';
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
+	<div class="container" style="background-color:#474167;">
+	<br>
+	</div>
 </div>
-<br>
-<div class="container">
+<div class="container" style="background-color:#474167;">
 	<div class="row">
 		<div class="col">
 		<h1 class="font-family: Nunito,sans-serif; text-center" style="color:#FAC39A">I nostri pacchetti	</h1>
 	</div>
 </div>
+</div>	<br>
+<div class="container-fluid" style="background-color:#FFF">
+<br><br>
 </div>
-<br>
-<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" style="background-color:#FFF">
+
   <div class="carousel-inner">
     <div class="carousel-item active">
 			<div class="card-deck mx-3">
 
-					<div class="card">
+					<div class="card" style="background-color:#474167;">
 					<img src="images/spa.jpg" class="card-img" alt="..." >
 				  <div class="card-img-overlay">
 				    <h3 class="card-title text-light text-center">BUSINESS SPA</h3>
@@ -54,7 +59,7 @@ include 'header.php';
 			    </div>
 
 
-					<div class="card" >
+					<div class="card" style="background-color:#474167;">
 					<img src="images/spa.jpg" class="card-img" alt="..."  >
 				  <div class="card-img-overlay">
 				    <h3 class="card-title text-light text-center">BUSINESS SPA</h3>
@@ -62,7 +67,7 @@ include 'header.php';
 			    </div>
 
 
-					<div class="card">
+					<div class="card" style="background-color:#474167;">
 					<img src="images/spa.jpg" class="card-img" alt="..." >
 				  <div class="card-img-overlay">
 				    <h3 class="card-title text-light text-center">BUSINESS SPA</h3>
@@ -74,7 +79,7 @@ include 'header.php';
     <div class="carousel-item">
 			<div class="card-deck mx-3">
 
-					<div class="card">
+					<div class="card" style="background-color:#474167;">
 					<img src="images/spa.jpg" class="card-img" alt="..." >
 				  <div class="card-img-overlay">
 				    <h3 class="card-title text-light text-center">BUSINESS SPA</h3>
@@ -82,7 +87,7 @@ include 'header.php';
 			    </div>
 
 
-					<div class="card" >
+					<div class="card" style="background-color:#474167;">
 					<img src="images/spa.jpg" class="card-img" alt="..."  >
 				  <div class="card-img-overlay">
 				    <h3 class="card-title text-light text-center">BUSINESS SPA</h3>
@@ -90,7 +95,7 @@ include 'header.php';
 			    </div>
 
 
-					<div class="card">
+					<div class="card" style="background-color:#474167;">
 					<img src="images/spa.jpg" class="card-img" alt="..." >
 				  <div class="card-img-overlay">
 				    <h3 class="card-title text-light text-center">BUSINESS SPA</h3>
@@ -102,7 +107,7 @@ include 'header.php';
     <div class="carousel-item">
 			<div class="card-deck mx-3">
 
-					<div class="card">
+					<div class="card" style="background-color:#FAC39A">
 					<img src="images/spa.jpg" class="card-img" alt="..." >
 				  <div class="card-img-overlay">
 				    <h3 class="card-title text-light text-center">BUSINESS SPA</h3>
@@ -110,7 +115,7 @@ include 'header.php';
 			    </div>
 
 
-					<div class="card" >
+					<div class="card" style="background-color:#FAC39A">
 					<img src="images/spa.jpg" class="card-img" alt="..."  >
 				  <div class="card-img-overlay">
 				    <h3 class="card-title text-light text-center">BUSINESS SPA</h3>
@@ -118,7 +123,7 @@ include 'header.php';
 			    </div>
 
 
-					<div class="card">
+					<div class="card" style="background-color:#FAC39A">
 					<img src="images/spa.jpg" class="card-img" alt="..." >
 				  <div class="card-img-overlay">
 				    <h3 class="card-title text-light text-center">BUSINESS SPA</h3>
@@ -128,34 +133,18 @@ include 'header.php';
 			</div>
     </div>
   </div>
-  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
+</div>
+<div class="container-fluid" style="background-color:#FFF">
+<br><br>
 </div>
 <div class="container-fluid">
 	<div class="row">
-	<div class="col-8">
-		<p class="font-family: Nunito,sans-serif; float-left text-light">
-	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dictum metus non magna egestas porttitor. Cras sit amet dictum magna, a lacinia augue. Sed rhoncus pulvinar aliquet. In hac habitasse platea dictumst. Suspendisse potenti. Pellentesque malesuada tincidunt risus, semper pulvinar mi dignissim nec. Quisque arcu metus, tincidunt in eleifend a, varius ut velit. Cras pellentesque aliquet turpis in luctus. Phasellus ac interdum urna. Proin neque est, blandit sit amet feugiat hendrerit,
-	commodo at nisi. Phasellus sed rhoncus augue. Vivamus quis consectetur ipsum. Maecenas euismod neque felis, at sollicitudin tellus vehicula quis. Mauris sed ligula vel diam mattis feugiat ut a urna.</p>
-
+		<div class="col-8" style="background-color:#FAC39A">
+			<br><br><br><br><br>
+		</div>
+		<div class="col-4">
+		</div>
 	</div>
-	<div class="col-4"><h1>TITOLO 1</h1></div>
-	<div class="row">
-	<div class="col-8"><h1>TITOLO 1</h1></div>
-	<div class="col-4">
-		<p class="font-family: Nunito,sans-serif; float-left text-light">
-	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dictum metus non magna egestas porttitor. Cras sit amet dictum magna, a lacinia augue. Sed rhoncus pulvinar aliquet. In hac habitasse platea dictumst. Suspendisse potenti. Pellentesque malesuada tincidunt risus, semper pulvinar mi dignissim nec. Quisque arcu metus, tincidunt in eleifend a, varius ut velit. Cras pellentesque aliquet turpis in luctus. Phasellus ac interdum urna. Proin neque est, blandit sit amet feugiat hendrerit,
-	commodo at nisi. Phasellus sed rhoncus augue. Vivamus quis consectetur ipsum. Maecenas euismod neque felis, at sollicitudin tellus vehicula quis. Mauris sed ligula vel diam mattis feugiat ut a urna.</p>
-
-</div>
-	</div>
-</div>
 </div>
 </body>
 </html>
