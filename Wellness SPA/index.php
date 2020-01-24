@@ -31,11 +31,11 @@ include 'header.php';
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
-	<div class="container" style="background-color:#474167;">
+	<div class="container-fluid" style="background-color:#474167;">
 	<br>
 	</div>
 </div>
-<div class="container" style="background-color:#474167;">
+<div class="container-fluid" style="background-color:#474167;">
 	<div class="row">
 		<div class="col">
 		<h1 class="font-family: Nunito,sans-serif; text-center" style="color:#FAC39A">I nostri pacchetti	</h1>
@@ -140,10 +140,28 @@ include 'header.php';
 <div class="container-fluid">
 	<div class="row">
 		<div class="col-8" style="background-color:#FAC39A">
-			<br><br><br><br><br>
+			<h1 class="font-weight-bold" style="color:#474167; font-family: 'Gil roy', sans-serif">Titolo 1</h1>
+			<p  style="color:#474167; font-size:18px; font-family: 'Gil roy', sans-serif">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac eros quis dolor condimentum pretium eu commodo erat. Sed justo ipsum, dapibus varius lectus et, feugiat aliquam odio. Curabitur non risus a metus porta ultricies sed in tortor. Etiam aliquam commodo ipsum, fermentum laoreet magna lobortis a. Aliquam faucibus magna et leo tempus, in sagittis arcu lobortis. In finibus orci quis justo auctor, ut porta ante laoreet. Nunc enim tortor, pharetra id nisl fringilla, sodales egestas diam.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac eros quis dolor condimentum pretium eu commodo erat. Sed justo ipsum, dapibus varius lectus et, feugiat aliquam odio. Curabitur non risus a metus porta ultricies sed in tortor. Etiam aliquam commodo ipsum, fermentum laoreet magna lobortis a. Aliquam faucibus magna et leo tempus, in sagittis arcu lobortis. In finibus orci quis justo auctor, ut porta ante laoreet. Nunc enim tortor, pharetra id nisl fringilla, sodales egestas diam.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac eros quis dolor condimentum pretium eu commodo erat. Sed justo ipsum, dapibus varius lectus et, feugiat aliquam odio. Curabitur non risus a metus porta ultricies sed in tortor. Etiam aliquam commodo ipsum, fermentum laoreet magna lobortis a. Aliquam faucibus magna et leo tempus, in sagittis arcu lobortis. In finibus orci quis justo auctor, ut porta ante laoreet. Nunc enim tortor, pharetra id nisl fringilla, sodales egestas diam.
+			</p>
 		</div>
 		<div class="col-4">
+			<h1 class="font-weight-bold" style="color:#FFF; font-family: 'Gil roy', sans-serif">Titolo 1</h1>
+			<p  style="color:#FFF; font-size:18px; font-family: 'Gil roy', sans-serif">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac eros quis dolor condimentum pretium eu commodo erat. Sed justo ipsum, dapibus varius lectus et, feugiat aliquam odio. Curabitur non risus a metus porta ultricies sed in tortor. Etiam aliquam commodo ipsum, fermentum laoreet magna lobortis a. Aliquam faucibus magna et leo tempus, in sagittis arcu lobortis. In finibus orci quis justo auctor, ut porta ante laoreet. Nunc enim tortor, pharetra id nisl fringilla, sodales egestas diam.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac eros quis dolor condimentum pretium eu commodo erat. Sed justo ipsum, dapibus varius lectus et, feugiat aliquam odio. Curabitur non risus a metus porta ultricies sed in tortor. Etiam aliquam commodo ipsum, fermentum laoreet magna lobortis a. Aliquam faucibus magna et leo tempus, in sagittis arcu lobortis. In finibus orci quis justo auctor, ut porta ante laoreet. Nunc enim tortor, pharetra id nisl fringilla, sodales egestas diam.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac eros quis dolor condimentum pretium eu commodo erat. Sed justo ipsum, dapibus varius lectus et, feugiat aliquam odio. Curabitur non risus a metus porta ultricies sed in tortor. Etiam aliquam commodo ipsum, fermentum laoreet magna lobortis a. Aliquam faucibus magna et leo tempus, in sagittis arcu lobortis. In finibus orci quis justo auctor, ut porta ante laoreet. Nunc enim tortor, pharetra id nisl fringilla, sodales egestas diam.
+			</p>
 		</div>
+	</div>
+	<div class="row">
+		<div class="col-4" style="background-color:#FFF;">
+			<h1 class="font-weight-bold" style="color:#474167; font-family: 'Gil roy', sans-serif">Titolo 1</h1>
+			<p  style="color:#474167; font-size:18px; font-family: 'Gil roy', sans-serif">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac eros quis dolor condimentum pretium eu commodo erat. Sed justo ipsum, dapibus varius lectus et, feugiat aliquam odio. Curabitur non risus a metus porta ultricies sed in tortor. Etiam aliquam commodo ipsum, fermentum laoreet magna lobortis a. Aliquam faucibus magna et leo tempus, in sagittis arcu lobortis. In finibus orci quis justo auctor, ut porta ante laoreet. Nunc enim tortor, pharetra id nisl fringilla, sodales egestas diam.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac eros quis dolor condimentum pretium eu commodo erat. Sed justo ipsum, dapibus varius lectus et, feugiat aliquam odio. Curabitur non risus a metus porta ultricies sed in tortor. Etiam aliquam commodo ipsum, fermentum laoreet magna lobortis a. Aliquam faucibus magna et leo tempus, in sagittis arcu lobortis. In finibus orci quis justo auctor, ut porta ante laoreet. Nunc enim tortor, pharetra id nisl fringilla, sodales egestas diam.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac eros quis dolor condimentum pretium eu commodo erat. Sed justo ipsum, dapibus varius lectus et, feugiat aliquam odio. Curabitur non risus a metus porta ultricies sed in tortor. Etiam aliquam commodo ipsum, fermentum laoreet magna lobortis a. Aliquam faucibus magna et leo tempus, in sagittis arcu lobortis. In finibus orci quis justo auctor, ut porta ante laoreet. Nunc enim tortor, pharetra id nisl fringilla, sodales egestas diam.
+			</p>
+		</div>
+		<div class="col-8" style="background-color:#b1baba">
+			<h1 class="font-weight-bold " style="color:#474167; font-family: 'Gil roy', sans-serif">Titolo 1</h1>
+			<p  style="color:#474167; font-size:18px; font-family: 'Gil roy', sans-serif">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac eros quis dolor condimentum pretium eu commodo erat. Sed justo ipsum, dapibus varius lectus et, feugiat aliquam odio. Curabitur non risus a metus porta ultricies sed in tortor. Etiam aliquam commodo ipsum, fermentum laoreet magna lobortis a. Aliquam faucibus magna et leo tempus, in sagittis arcu lobortis. In finibus orci quis justo auctor, ut porta ante laoreet. Nunc enim tortor, pharetra id nisl fringilla, sodales egestas diam.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac eros quis dolor condimentum pretium eu commodo erat. Sed justo ipsum, dapibus varius lectus et, feugiat aliquam odio. Curabitur non risus a metus porta ultricies sed in tortor. Etiam aliquam commodo ipsum, fermentum laoreet magna lobortis a. Aliquam faucibus magna et leo tempus, in sagittis arcu lobortis. In finibus orci quis justo auctor, ut porta ante laoreet. Nunc enim tortor, pharetra id nisl fringilla, sodales egestas diam.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac eros quis dolor condimentum pretium eu commodo erat. Sed justo ipsum, dapibus varius lectus et, feugiat aliquam odio. Curabitur non risus a metus porta ultricies sed in tortor. Etiam aliquam commodo ipsum, fermentum laoreet magna lobortis a. Aliquam faucibus magna et leo tempus, in sagittis arcu lobortis. In finibus orci quis justo auctor, ut porta ante laoreet. Nunc enim tortor, pharetra id nisl fringilla, sodales egestas diam.
+			</p>
+		</div>
+	</div>
 	</div>
 </div>
 </body>
