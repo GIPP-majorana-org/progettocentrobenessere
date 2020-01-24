@@ -18,7 +18,7 @@ Turni(**CODICE**, ora_in, ora_fi, descrizione)
 
 Sostituzioni(**CODICE**, ora_in, ora_fi, descrizione, nome_sos, *OPERATORE*)
 
-Medici(**CF**, nome, cognome, n_telefono, email, t_studio, *NAZIONE*)
+Medici(**CF**, nome, cognome, n_telefono, email, t_studio, *CITTà*)
 
 Team_Medici(**CODICE**, nome, n_componenti, specializzazione, descrizione)
 
