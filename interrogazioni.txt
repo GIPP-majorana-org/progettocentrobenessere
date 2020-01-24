@@ -2,8 +2,7 @@ nome e cognome dei clienti di Ragusa che hanno effettuato una prenotazione in da
 
 temp= selezione di prenotazione su data_prenotazione="31-03-2020";
 temp1= congiunzione di temp e clienti su temp.cliente=cliente.CF;
-temp2= congiunzione di temp1 e nazione su temp1.NAZIONE=nazioni.nome;
-temp3= congiunzione di temp2 e città su temp2.nome=città.CAP;
+temp2= congiunzione di temp1 e città su temp1.città=città.codice;
 temp4= selezione di temp3 su città.nome="Ragusa";
 temp5= proiezione di temp4 su nome e cognome;
 
@@ -20,8 +19,7 @@ temp4=proiezione di temp3 su trattamenti.descrizione;
 nome del sostituto/a in servizio nella città Bergamo.
 
 temp=selezione di città su nome="Bergamo";
-temp1= congiunzione di città e nazione su temp.CAP=nazioni.nome;
-temp2= congiunzione di temp1 e operatori su nazioni.nome=operatori.CF;
+temp2= congiunzione di temp1 e operatori su città.codice=operatori.CF;
 temp3= congiunzione di temp2 e sostituzione su temp2.CF= sostituzioni.CODICE;
 temp4= proiezione di temp3 su nome_sos;
 
@@ -37,19 +35,20 @@ temp4= Proiezione di temp3 su scadenza;
 
 nome e cognome del medico tedesco che compie un consulto in data "07/06/2020" al cliente Puglisi Marco;
 
-temp= congiunzione di medici e nazioni su medici.CF= nazioni.nome;
-temp1= congiunzione di temp e consulti_medici su temp.CF=consulti_medici.medico;
-temp2= congiunzione di temp1 e cliente su consulti_medici.cliente=cliente.CF;
-temp3= selezione di temp2 su consulti_medici.data="07/06/2020";
-temp4= selezione di temp3 su clienti.nome="Marco", e su clienti.cognome="Puglisi";
-temp5= selezione di temp4 su medici.nazione="Germania";
-temp6= proiezione di temp5 su medici.nome e medici.cognome;
+temp= congiunzione di medici e città su medici.CF= città.codice;
+temp1= congiunzione di temp e nazione su città.codice= nazione.nome;
+temp2= congiunzione di temp1 e consulti_medici su temp.CF=consulti_medici.medico;
+temp3= congiunzione di temp2 e cliente su consulti_medici.cliente=cliente.CF;
+temp4= selezione di temp3 su consulti_medici.data="07/06/2020";
+temp5= selezione di temp4 su clienti.nome="Marco", e su clienti.cognome="Puglisi";
+temp6= selezione di temp5 su medici.nazione="Germania";
+temp7= proiezione di temp6 su medici.nome e medici.cognome;
 
 
-Ragione sociale dell'operatore francese che ha iniziato il turno alle ore "11:00";
+Ragione sociale dell'operatore di Parigi che ha iniziato il turno alle ore "11:00";
 
-temp= congiunzione di operatore e nazione su operatori.nazioni= nazioni.nome;
-temp1= selezione di temp su nazioni.nome="Francia";
+temp= congiunzione di operatore e città su operatori.città= città.codice;
+temp1= selezione di temp su città.nome="Parigi";
 temp2= congiunzione di temp1 e turnooperatore su operatori.cf=turnooperatore.operatore;
 temp3= congiunzione di temp2 e turni su turnooperatore.turno=turni.codice;
 temp4= selezione di temp3 su turni.ora_in="11:00";
