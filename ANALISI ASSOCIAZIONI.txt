@@ -20,7 +20,7 @@ L'associazione sarà molti a molti facoltativa per il trattamento.
 
 -Città e Operatore, questa associazione si verifica perchè un operatore appartiene ad una città. Ogni operatore appartiene a una e una sola città(1,1). Una città può non avere operatori o averne molti(0,N). L'associazione sarà quindi uno a molti, facoltativa da parte della nazione.
 
--Nazione e medico, questa associazione si verifica perchè un dottore appartiene ad una nazione. Ogni dottore appartiene a una e una sola nazione(1,1). Una nazione può non avere dottori o averne molti(0,N). L'associazione sarà quindi uno a molti, facoltativa da parte della nazione.
+-Città e medico, questa associazione si verifica perchè un medico appartiene ad una città. Ogni medico appartiene a una e una sola città(1,1). Una città può non avere medici o averne molti(0,N). L'associazione sarà quindi uno a molti, facoltativa da parte della nazione.
 
 -trattamento e operatore, questa associazione si verifica perchè per ogni trattamento deve esserci almeno un operatore. Per ogni trattamento ci sarà almeno un operatore o più operatori (1,N). 
 Per ogni operatore può non essere assegnato alcuno trattamento o più (0;N). L'associazione che ne scaturirà sarà quindi un associazione molti a molti obbligatoria per trattamento e facoltativa
