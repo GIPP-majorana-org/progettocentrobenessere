@@ -35,8 +35,8 @@ temp4= Proiezione di temp3 su scadenza;
 
 nome e cognome del medico tedesco che compie un consulto in data "07/06/2020" al cliente Puglisi Marco;
 
-temp= congiunzione di medici e città su medici.CF= città.codice;
-temp1= congiunzione di temp e nazione su città.codice= nazione.nome;
+temp= congiunzione di medici e città su medici.città= città.codice;
+temp1= congiunzione di temp e nazione su città.nazione= nazione.nome;
 temp2= congiunzione di temp1 e consulti_medici su temp.CF=consulti_medici.medico;
 temp3= congiunzione di temp2 e cliente su consulti_medici.cliente=cliente.CF;
 temp4= selezione di temp3 su consulti_medici.data="07/06/2020";
@@ -79,9 +79,21 @@ temp5= proiezione di temp4 su clienti.nome e clienti.cognome;
 
 nome team medico che ha gestito la patologia "Dermatite" dei clienti nati nel "1987".
 
-temp= congiunzione di team_medici e cliente su team_medici.codice= clienti.team_medico;
+temp= congiunzione di team_medico e cliente su team_medici.codice= clienti.team_medico;
 temp1= selezione di temp su clienti.patologie="Dermatite";
 temp2= selezione di temp1 su clienti.data_nascita="1987";
 temp3= proiezione di temp2 su team_medici.nome;
 
+
+nome e cognome del medico che appartiene al team medico "Killed" che ha gestito il gruppo sanguigno "b+" dei clienti nati nel "2000" della città di Ragusa.
+
+temp= congiunzione di medico e team_medico su medici.cf= MedTeamMed.medico;
+temp1= congiunzione di temp e team_medici su MedTeamMed.team_medico= team_medici.codice;
+temp2= selezione di temp1 su team_medici.nome="Killed";
+temp3= congiunzione di temp2 e cliente su team_medici.codice= clienti.team_medico;
+temp4= congiunzione di temp3 e città su cliente.città= città.cap;
+temp5= selezione di temp4 su clienti.tipo_sangue="b+";
+temp6= selezione di temp5 su clienti.data_nascita="2000";
+temp7= selezione di temp6 su città.nome="Ragusa";
+temp8= proiezione di temp7 su medici.nome e medici.cognome;
 
